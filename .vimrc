@@ -46,6 +46,10 @@ set background=dark
 "let g:solarized_termcolors=256
 colorscheme solarized
 
+" Disable scroll bar
+set guioptions-=L
+set guioptions-=r
+
 let g:airline#extensions#tabline#enabled = 1
 
 set expandtab
