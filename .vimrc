@@ -49,6 +49,8 @@ colorscheme solarized
 " Disable scroll bar
 set guioptions-=L
 set guioptions-=r
+set guioptions-=T "Disable tool bar
+set guioptions-=m "Disable menu bar
 
 let g:airline#extensions#tabline#enabled = 1
 
@@ -58,5 +60,10 @@ set laststatus=2
 set smartindent
 
 set nu
+set hlsearch
 
 map <F2> :w<CR>:!gcc %<CR>:!./a.out<CR>
+map <C-F8> :nohl<CR>
+" copy and paste to and from system clipboard
+map <C-v> "*p
+map <C-c> "*y
